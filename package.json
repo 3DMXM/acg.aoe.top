@@ -1,0 +1,30 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --dotenv .env",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^2.9.2",
+    "@mdi/font": "^7.4.47",
+    "@nuxt/ui": "^2.16.0",
+    "@pinia/nuxt": "^0.5.1",
+    "axios": "^1.7.2",
+    "nuxt": "^3.11.2",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
+  },
+  "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72",
+  "devDependencies": {
+    "@element-plus/nuxt": "^1.0.9",
+    "element-plus": "^2.7.5",
+    "vite-plugin-vuetify": "^2.0.3",
+    "vuetify": "^3.6.8"
+  }
+}
