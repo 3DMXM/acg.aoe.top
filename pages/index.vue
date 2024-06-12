@@ -1,29 +1,18 @@
 <script setup lang="ts">
 
-import axios from 'axios'
+const useitem = useItem()
 
-definePageMeta({
-    layout: 'default'
-})
-
-async function getItem() {
-    // let items = await fetch('/api/GetList', {
-    //     method: 'post',
-    //     body: { test: 123 }
-
-    // })
-
-    let res = await axios.post('/api/GetList', { path: "Agc" })
-
-    let items = res.data
-    console.log(items);
-}
-
-getItem()
 
 </script>
 <template>
-    <h1>Acg.aoe.top</h1>
+    <v-btn @click="useitem.getItem">测试</v-btn>
+
+    <v-row>
+        <v-col cols="12" v-for="item in useitem.items" :key="item.id">
+            <ItemAnimation :item="item"></ItemAnimation>
+        </v-col>
+    </v-row>
+
 </template>
 <script lang='ts'>
 

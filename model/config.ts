@@ -15,6 +15,7 @@ export class Config {
 
     public static getConfig() {
         return {
+            rootPath: process?.env?.rootPath || '/Acg',
             token: this.token
         }
     }

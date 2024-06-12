@@ -25,7 +25,6 @@ export default defineNuxtConfig({
             },
         ],
         '@element-plus/nuxt',
-        '@nuxt/ui',
     ],
     vite: {
         vue: {
@@ -36,9 +35,8 @@ export default defineNuxtConfig({
     },
     runtimeConfig: {
         public: {
-            root_path: process?.env?.onedrive_root || '/Acg',
+            rootPath: process?.env?.rootPath || '/Acg',
             refreshToken: process?.env?.refreshToken || '',
-            accessToken: process?.env?.accessToken || '',
         },
     },
 })
