@@ -39,4 +39,8 @@ export default defineNuxtConfig({
             refreshToken: process?.env?.refreshToken || '',
         },
     },
+    colorMode: {
+        preference: 'dark'
+    }
+
 })

@@ -5,7 +5,7 @@ export const useItem = defineStore('item', {
     state: () => {
         return {
             items: [] as IOneDriveFolderItem[],
-            paths: ['2024', '04', '[ANi] ReMonster'] as string[]
+            paths: [] as string[]
         }
     },
 
